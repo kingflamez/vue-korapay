@@ -1,6 +1,6 @@
 {
   "name": "vue-korapay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "main": "dist/korapay.umd.min.js",
   "scripts": {
@@ -44,5 +44,7 @@
     "type": "git",
     "url": "https://github.com/kingflamez/vue-korapay.git"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
