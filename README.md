@@ -1,5 +1,7 @@
 # Korapay for Vue 2.x
 
+![Demo](https://github.com/SomtoUgeh/react-korapay/raw/master/media/demo.png)
+
 This helps you accept payment using Korapay’s Collection Modal in your Vue app
 
 [![NPM](https://img.shields.io/npm/v/vue-korapay.svg)](https://www.npmjs.com/package/vue-korapay) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
@@ -194,11 +196,13 @@ export default {
 | @onFailed    | [Function] | Optional - function to be called when the payment failed                          |
 | @onTokenized | [Function] | Optional - function to be called when card tokenization is completed successfully |
 
-
 > The Korapay component accepts a slot so you can pass in more data into your button apart from plain text
+
+Please checkout
+[Korapay Documentation](https://korahq.atlassian.net/wiki/spaces/AR/pages/1064370549/Collection+Modal) for more explanation
 
 ## License
 
-Follow on Twitter [@mrflamez_](https://twitter.com/mrflamez_)
+Follow on Twitter [@mrflamez\_](https://twitter.com/mrflamez_)
 
 MIT © [kingflamez](https://github.com/kingflamez)
