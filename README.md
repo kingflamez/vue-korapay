@@ -13,9 +13,9 @@ This helps you accept payment using Korapay’s Collection Modal in your Vue app
 Install the npm package:
 
 ```bash
-npm install --save vue-korapay
+npm install --save @kingflamez/vue-korapay
 # OR
-yarn add vue-korapay
+yarn add @kingflamez/vue-korapay
 ```
 
 Add the Vue plugin in your main.js and pass your [public key](https://merchant.korapay.com/dashboard/settings/api-integrations):

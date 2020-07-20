@@ -43,8 +43,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/kingflamez/vue-korapay.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
