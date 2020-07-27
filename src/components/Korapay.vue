@@ -36,7 +36,7 @@ export default {
     notification_url: {
       type: String
     },
-    naration: {
+    narration: {
       type: String
     },
     channels: {
@@ -50,13 +50,13 @@ export default {
     makePayment() {
       // Assign this to variable self so as to use it in the korapay method
       const self = this
-      const {amount, currency, reference, notification_url, naration, channels, container} = self
+      const {amount, currency, reference, notification_url, narration, channels, container} = self
       this.$payWithKorapay({
         amount,
         currency,
         reference,
         notification_url,
-        naration,
+        narration,
         channels,
         container,
         customer: {
