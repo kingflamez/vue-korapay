@@ -13,9 +13,9 @@ This helps you accept payment using Korapay’s Collection Modal in your Vue app
 Install the npm package:
 
 ```bash
-npm install --save @kingflamez/vue-korapay
+npm install --save vue-korapay
 # OR
-yarn add @kingflamez/vue-korapay
+yarn add vue-korapay
 ```
 
 Add the Vue plugin in your main.js and pass your [public key](https://merchant.korapay.com/dashboard/settings/api-integrations):
@@ -24,7 +24,7 @@ Add the Vue plugin in your main.js and pass your [public key](https://merchant.k
 import Vue from 'vue'
 import Korapay from 'vue-korapay'
 
-Vue.use(Korapay, {public_key: 'pk_test_**********************'})
+Vue.use(Korapay, {publicKey: 'pk_test_**********************'})
 ```
 
 ### Nuxt
@@ -45,7 +45,7 @@ Create a `korapay.js` file in your `plugins` folder and add the Vue plugin:
 import Vue from 'vue'
 import Korapay from 'vue-korapay'
 
-Vue.use(Korapay, {public_key: 'pk_test_**********************'})
+Vue.use(Korapay, {publicKey: 'pk_test_**********************'})
 ```
 
 Go to your `nuxt.config.js` and add it to your plugin section
@@ -79,13 +79,13 @@ Korapay can be called using `$payWithKorapay()` method, see example below
 
 <script>
 export default {
-  methods: {
-    data () {
-      return {
-        amount: 200
-      }
-    },
+  data () {
+    return {
+      amount: 200
+    }
+  },
 
+  methods: {
     makePayment () {
       this.$payWithKorapay({
         amount: this.amount,

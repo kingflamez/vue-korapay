@@ -1,47 +1,51 @@
 {
   "name": "vue-korapay",
-  "version": "1.0.1",
+  "version": "1.1.0",
+  "description": "Vue Korapay for Vue 2.x.",
   "private": false,
-  "main": "dist/korapay.umd.min.js",
+  "main": "dist/korapay.min.js",
   "scripts": {
-    "build": "vue-cli-service build --target lib --name korapay src/main.js",
-    "dev": "vue-cli-service build --target lib --name korapay src/main.js --watch",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint src --ext=js,vue  || exit 0",
+    "lint:fix": "eslint src --ext=js,vue --fix  || exit 0",
+    "dist": "webpack --env=webpack.dist"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.7"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-vue": "^5.2.2",
+    "standard": "^12.0.1",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue": "^2.6.7",
+    "vue-loader": "^15.6.4",
+    "vue-template-compiler": "^2.6.7",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kingflamez/vue-korapay.git"
-  }
+    "url": "git+https://github.com/kingflamez/vue-korapay.git"
+  },
+  "keywords": [
+    "korapay",
+    "payment",
+    "payment modal",
+    "nigeria",
+    "africa",
+    "flamez"
+  ],
+  "author": "Oluwole Adebiyi - @kingflamez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kingflamez/vue-korapay/issues"
+  },
+  "homepage": "https://github.com/kingflamez/vue-korapay#readme"
 }
